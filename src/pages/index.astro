@@ -39,30 +39,28 @@ import Card from "../components/Card.astro";
 
     <h1>HTML <span class="text-gradient">BÁSICO</span></h1>
 
-    <span
-      ><span class="text-gradient">PARRAFOS</span>
+    <span class="text-gradient">PARRAFOS</span>
 
-      <p>
-        Las palabras clave de algunas etiquetas son ovbias, pero hay algunas
-        etiquetas que usan una forma abreviada. Por ejemplo usamos la letra
-        <span class="text-gradient">"p"</span>
-        para un párrafo.
-      </p>
+    <p>
+      Las palabras clave de algunas etiquetas son ovbias, pero hay algunas
+      etiquetas que usan una forma abreviada. Por ejemplo usamos la letra
+      <span class="text-gradient">"p"</span>
+      para un párrafo.
+    </p>
 
-      <span class="text-gradient">ENCABEZADOS</span>
+    <span class="text-gradient">ENCABEZADOS</span>
 
-      <p>
-        Podemos crear encabezados en HTML para enfatizar ciertos textos. Hay 6
-        tamaños de encabezado en HTML, de h1 a h6.
-      </p>
+    <p>
+      Podemos crear encabezados en HTML para enfatizar ciertos textos. Hay 6
+      tamaños de encabezado en HTML, de h1 a h6.
+    </p>
 
-      <h1 class="text-gradient">Encabezado 1</h1>
-      <h2>Encabezado 2</h2>
-      <h3 class="text-gradient">Encabezado 3</h3>
-      <h4>Encabezado 4</h4>
-      <h5 class="text-gradient">Encabezado 5</h5>
-      <h6>Encabezado 6</h6>
-    </span>
+    <h1 class="text-gradient">Encabezado 1</h1>
+    <h2>Encabezado 2</h2>
+    <h3 class="text-gradient">Encabezado 3</h3>
+    <h4>Encabezado 4</h4>
+    <h5 class="text-gradient">Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
   </main>
 
   <style>
@@ -84,11 +82,14 @@ import Card from "../components/Card.astro";
       height: auto;
       z-index: -1;
     }
-    
-	h1, h2, h3, h4, h5, h6 {
-		text-align: center;
-	}
-
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: center;
+    }
     .text-gradient {
       background-image: var(--accent-gradient);
       -webkit-background-clip: text;
