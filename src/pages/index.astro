@@ -88,6 +88,15 @@ import Card from "../components/Card.astro";
 
   <img src="Elemento 2.png" alt="Elemento2" class="br-img" height="100px" width="100">
 
+  <p><span class="text-gradient">"br"</span> es una etiqueta vacía. Las etiquetas vacías <span class="text-gradient">no tienen etiqueta de cierre ni contenido</span>. También se les llama
+    etiquetas de cierre automático.</p>
+
+  <span class="text-gradient">CURSIVA</span>
+
+  <p>Hay un elemento para dar énfasis al texto, <span class="text-gradient">"em"</span> lo pone en <em>cursiva</em>.</em></p>
+
+  <img src="Elemento 3.png" alt="Elemento3" class="cursiva-img"><br><br>
+
 
   </main>
 
@@ -102,6 +111,13 @@ import Card from "../components/Card.astro";
       line-height: 1.6;
     }
     .hello-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px;
+      border: 5px solid white;
+    }
+    .cursiva-img {
       display: block;
       margin-left: auto;
       margin-right: auto;
