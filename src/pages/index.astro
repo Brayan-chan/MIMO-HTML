@@ -67,7 +67,7 @@ import Card from "../components/Card.astro";
       Un elemento es lo que llamamos la etiqueta de apertura, la etiqueta de
       cierre y el código intermedio.
     </p>
-    <img src="Elemento 1.png" alt="Elemento1" /><br>
+    <img src="Elemento 1.png" alt="Elemento1" class="hello-img"/><br>
 
     <Card
 	  href="https://hello-bcc.vercel.app/"
@@ -82,6 +82,13 @@ import Card from "../components/Card.astro";
     <p>Más adelante, aprenderemos otros elementos que van dentro del elemento HTML para dar estilo a las páginas web y
         hacerlas interactivas.</p>
 
+  <span class="text-gradient">SEPARAR LINEAS</span>
+
+  <p>Podemos separar lineas con la ayuda de la etiqueta de salto de linea:  <span class="text-gradient">"br"</span>.</p>
+
+  <img src="Elemento 2.png" alt="Elemento2" class="br-img" height="100px" width="100">
+
+
   </main>
 
   <style>
@@ -93,6 +100,20 @@ import Card from "../components/Card.astro";
       color: white;
       font-size: 20px;
       line-height: 1.6;
+    }
+    .hello-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px;
+      border: 5px solid white;
+    }
+    .br-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px;
+      border: 5px solid white;
     }
     .astro-a {
       position: absolute;
