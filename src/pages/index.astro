@@ -146,6 +146,30 @@ import Card from "../components/Card.astro";
 
   <span class="text-gradient">CREACIÓN DE ENLACES</span>
 
+  <p>Para comenzar a crear un enlace, agregamos el texto entre las etiquetas <span class="text-gradient">"a"</span>, el cual, tiene cierre con el signo
+    <span class="text-gradient">"/"</span>. Esto no resaltará el texto todavía.</p>
+  <p>"a" Significa <span class="text-gradient">etiqueta Ancla</span>.</p>
+
+  <a href="https://astro.build/" style="color: white; font-size: 20px; text-align: center; display: block;">Learn to code</a>
+
+  <p><span class="text-gradient">href</span> es un <em>atributo</em></strong>. Todos los atributos tienen dos cosas en común: brindar
+  infromación adicional y van dentro de la etiqueta de apertura.</p>
+ 
+  <p>Los atributos se agregan después del nombre de la etiqueta y antes del signo de cierre.</p>
+
+  <Card
+	  href="https://stackoverflow.com/"
+    title="Href attribute"
+    body="La funcion de los enlaces es redirigir a otras páginas."
+  /> <br>
+
+  <span class="text-gradient">SIGUIENTES LECCIONES</span><br><br>
+  <button onclick="location.href='https://imageneshtml-bcc.netlify.app/'" class="images-btn">imagenesHTML</button>
+
+  <button onclick="location.href='https://cssbasic-bcc.netlify.app/'" class="css-btn">CSS Basico</button><br>
+
+  <p style="text-align: start;" class="text-gradient">@BComputerCenter</p>
+  <p style="text-align: start;" class="text-gradient">Todos los derechos reservados.</p>
   </main>
 
   <style>
@@ -190,6 +214,29 @@ import Card from "../components/Card.astro";
       border-radius: 20px;
       border: 5px solid white;
     }
+    .images-btn, .css-btn {
+      background-image: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+      border: 5px solid white;
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin: 20px auto;
+      cursor: pointer;
+      font-size: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .images-btn:hover, .css-btn:hover {
+      background-position: 100%;
+      color: white;
+      border: 5px solid purple;
+      transition: background 0.4s ease-in-out;
+    
+    }
     .astro-a {
       position: absolute;
       top: -32px;
@@ -224,7 +271,7 @@ import Card from "../components/Card.astro";
       padding: 1.5rem;
       border-radius: 8px;
     }
-    .instructions code {
+    .instructions code, {
       font-size: 0.8em;
       font-weight: bold;
       background: rgba(var(--accent-light), 12%);
@@ -242,7 +289,5 @@ import Card from "../components/Card.astro";
       padding: 0;
     }
   </style>
-
-  
 
 </Layout>
