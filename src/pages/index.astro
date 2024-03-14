@@ -39,6 +39,21 @@ import Card from "../components/Card.astro";
 
     <h1>HTML <span class="text-gradient">BÁSICO</span></h1>
 
+    <span class="text-gradient">¿QUE ES HTML?</span>
+
+    <p>
+      HTML <span class="text-gradient">(HyperText Markup Language)</span> es el lenguaje de marcas de hipertexto, es decir, es un lenguaje de marcado que nos va permitir darle la estructura basica a una página web.
+      <p>HTML se utiliza para darle contenido a una página web, a nivel de texto, imágenes, videos, tablas, etc.</p>
+    </p>
+
+    <Card
+	  href="https://hello-bcc.vercel.app/"
+      title="Index.html"
+      body="El archivo index.html es el archivo principal de la página. En el mundo de la programación web se suele decir que la primera página a mostrar es el archivo index."  
+    /><br>
+
+    <p>Pueden existir n numeros de páginas o archivos HTML, por lo tanto, definir un index puede ayudarnos a organizar el manejo entre cada uno de esas páginas o archivos.</p>
+
     <span class="text-gradient">PARRAFOS</span>
 
     <p>
@@ -77,10 +92,12 @@ import Card from "../components/Card.astro";
 
 	<span class="text-gradient">ELEMENTOS HTML Y BODY</span>
 
-	<p>Los elementos HTML y body forman la estructura de una página web. Colocamos los elemntos que queremos mostrar
+	<p>Los elementos HTML y body forman la estructura de una página web. Colocamos los elementos que queremos mostrar
         dentro del cuerpo.</p>
-    <p>Más adelante, aprenderemos otros elementos que van dentro del elemento HTML para dar estilo a las páginas web y
+  <p>Más adelante, aprenderemos otros elementos que van dentro del elemento HTML para dar estilo a las páginas web y
         hacerlas interactivas.</p>
+
+  <img src="bodyhtml.png" alt="bodyhtml" class="bodyhtml-img" height="150px" width="300"><br>
 
   <span class="text-gradient">SEPARAR LINEAS</span>
 
@@ -90,6 +107,12 @@ import Card from "../components/Card.astro";
 
   <p><span class="text-gradient">"br"</span> es una etiqueta vacía. Las etiquetas vacías <span class="text-gradient">no tienen etiqueta de cierre ni contenido</span>. También se les llama
     etiquetas de cierre automático.</p>
+
+  <span class="text-gradient">LINEA SEPARADORA</span>
+
+  <p>Para crear una linea separadora, usamos la etiqueta <span class="text-gradient">"hr"</span>.</p>
+
+  <hr><br>
 
   <span class="text-gradient">CURSIVA</span>
 
@@ -123,7 +146,23 @@ import Card from "../components/Card.astro";
 
   <p>El <span class="text-gradient">head</span> es un contenedor de información sobre una página web.</p>
 
+  <Card
+    href="https://es.wikipedia.org/wiki/UTF-8"
+    title="UTF-8"
+    body="UTF-8 es la codificación universal de caracteres."
+  /><br>
+
   <img src="Header.png" alt="Header" class="header-img" height="120px"><br>
+
+  <h3><span class="text-gradient">TIPOS DE LISTAS</span></h3>
+
+  <p class="text-gradient">LISTAS DESORDENADAS</p>
+
+  <p>Para crear una lista desordenada, usamos la etiqueta <span class="text-gradient">"ul"</span>.</p>
+  <p>Para crear un elemento dentro de la lista desordenada, usamos la etiqueta <span class="text-gradient">"li"</span>.</p>
+  <p>La principal característica de las listas desordenadas es que no se enumeran los elementos ya que no llevan un orden.</p>
+
+  <img src="desordenadas.png" alt="desordenadas" class="ul-img" height="150px" width="300"><br>
 
   <span class="text-gradient">BOTONES DE CONSTRUCCIÓN</span>
 
@@ -207,7 +246,8 @@ import Card from "../components/Card.astro";
       margin-bottom: 20px;
     }
     .hello-img, .cursiva-img, .negrita-img, .br-img,
-    .title-img, .name-img, .version-html-img, .header-img {
+    .title-img, .name-img, .version-html-img, .header-img,
+    .bodyhtml-img, .ul-img {
       display: block;
       margin-left: auto;
       margin-right: auto;
